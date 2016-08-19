@@ -1,7 +1,7 @@
 # OrmLiteSampleDemo
 Android ormlite sample demo
 
-##一个很简单的ormlite的demo，主要是为了熟悉这个sqlite框架
+##一个很简单的ormlite的demo，主要是为了熟悉这个ormlite框架
 ```
 public class ClassDao extends BaseDao<ClassModel,Integer> {
 
