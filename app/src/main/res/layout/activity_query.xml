@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <Button
+        android:id="@+id/query_class_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="query_class"/>
+
+    <TextView
+        android:id="@+id/class_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
+
+    <EditText
+        android:id="@+id/class_id_edit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="class_id"/>
+
+    <Button
+        android:id="@+id/query_stu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="query_stu_by_classid"/>
+
+    <TextView
+        android:id="@+id/student_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

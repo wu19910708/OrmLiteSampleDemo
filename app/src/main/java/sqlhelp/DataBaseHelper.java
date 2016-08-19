@@ -7,10 +7,14 @@ import com.j256.ormlite.android.apptools.OpenHelperManager;
 import com.j256.ormlite.android.apptools.OrmLiteSqliteOpenHelper;
 import com.j256.ormlite.dao.Dao;
 import com.j256.ormlite.support.ConnectionSource;
+import com.j256.ormlite.table.TableUtils;
 
 import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
+
+import model.ClassModel;
+import model.Student;
 
 /**
  * Created by wxs on 16/8/18.
@@ -29,7 +33,12 @@ public class DataBaseHelper extends OrmLiteSqliteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase, ConnectionSource connectionSource) {
-
+        try{
+            TableUtils.createTable(connectionSource , Student.class);
+            TableUtils.createTable(connectionSource , ClassModel.class);
+        }catch (SQLException e){
+            e.printStackTrace();
+        }
     }
 
     @Override

@@ -46,4 +46,12 @@ public class ClassModel implements Serializable {
     public void setId(Integer id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "ClassModel{" +
+                "className='" + className + '\'' +
+                ", classId=" + classId +
+                '}';
+    }
 }
