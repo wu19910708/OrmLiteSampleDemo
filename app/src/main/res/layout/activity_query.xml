@@ -36,4 +36,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"/>
 
+    <Button
+        android:id="@+id/query_all_stu_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="query_all_stu"/>
+
+    <TextView
+        android:id="@+id/all_stu_info_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"/>
+
 </LinearLayout>
