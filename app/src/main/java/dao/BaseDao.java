@@ -59,6 +59,11 @@ public abstract class BaseDao<T,Integer> {
         }
     }
 
+    public T queryById(Integer id) throws SQLException{
+        return getDao().queryForId(id);
+    }
+
+
     public List<T> query(PreparedQuery<T> preparedQuery) throws SQLException {
         return getDao().query(preparedQuery);
     }
@@ -216,6 +221,9 @@ public abstract class BaseDao<T,Integer> {
     public long countOf() throws SQLException {
         return getDao().countOf();
     }
+
+
+
 
 
     /**
